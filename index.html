@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gradient Generator(G.G.)</title>
+</head>
+<body>
+    <h1>Gradient Generator (G.G.)</h1>
+    <p>Beautiful, colorful backgrounds</p>
+    <div id="contain">
+        <label for="">Linear:</label>
+        <input id="linear" type="radio" name="grad" value="linear">
+        <label for="">Radial:</label>
+        <input id="radial" type="radio" name="grad" value="radial">
+        <label for="">Conic:</label>
+        <input id="conic" type="radio" name="grad" value="conic">
+    </div>
+    
+    <div class="gradientCard" id="gradient1"></div><br>
+    <div id="toolKit">
+        <label for="">Number of Colors:</label>
+        <select name="colors" id="numOfColors">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>   
+        <div class="colorBox" id="colorBox1">
+                <label for="">color 1: </label>
+                <input id="color1" type="color">
+         </div>
+        <div class="colorBox" id="colorBox2">
+        <label for="">color 2: </label>
+        <input id="color2" type="color">
+        </div>
+        <div class="colorBox" id="colorBox3">
+                <label for="">color 3: </label>
+                <input id="color3" type="color">
+        </div>
+        <div class="colorBox" id="colorBox4">
+                <label for="">color 4: </label>
+                <input id="color4" type="color">
+        </div>
+        <div class="colorBox" id="colorBox5">
+                <label for="">color 5: </label>
+                <input id="color5" type="color">
+        </div>
+        <div class="colorBox" id="colorBox6">
+                <label for="">color 6: </label>
+                <input id="color6" type="color">
+        </div>
+        <div class="colorBox" id="colorBox7">
+                <label for="">color 7: </label>
+                <input id="color7" type="color">
+        </div>
+        <div class="colorBox" id="colorBox8">
+                <label for="">color 8: </label>
+                <input id="color8" type="color">
+         </div>
+        <br>
+            
+        <div id="linearContainer">
+                <label for="">Degree:</label>
+                <input id="degrees" type="range" value="0" min="0" max="360">
+                <p id="degreeNumber">0</p>
+                
+        </div>
+        <div id="radialContainer">
+                <label for="">x: </label>
+                <input id="xPosition" type="range" value="50" min="0" max="100">
+                <p id="xPos">50%</p>
+                <label for="">y: </label>
+                <input id="yPosition" type="range" value="50" min="0" max="100">
+                <p id="yPos">50%</p>
+        </div>
+        <div id="conicalContainer">
+                <label for="">Degree:</label>
+                <input id="degreesC" type="range" value="0" min="0" max="360">
+                <p id="degreeCNumber">0</p><br>
+                <label for="">x: </label>
+                <input id="xPositionC" type="range" value="50" min="0" max="100">
+                <p id="xPosC">50%</p><br>
+                <label for="">y: </label>
+                <input id="yPositionC" type="range" value="50" min="0" max="100">
+                <p id="yPosC">50%</p>
+        </div>
+    </div>
+    
+        
+        
+
+    <p id="cssCode"></p>
+    <p>Practice Site by Ryan Park &copy;2023</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

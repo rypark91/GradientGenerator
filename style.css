@@ -1,0 +1,35 @@
+.colorBox{
+    display: inline-block;
+}
+#gradient1{
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: linear-gradient(red, blue);
+}
+h1, p{
+    text-align: center;
+}
+html, body{
+    background-color: rgb(197, 197, 197);
+}
+
+#contain{
+    width: 250px;
+    margin: 0 auto;
+}
+#toolKit{
+    max-width: 50%;
+    min-width: 10%;
+    margin: 0 auto;
+}
+@media(min-width: 250px) and (max-width: 500px){
+    #gradient1{
+        width: 350px;
+        height: 350px;
+    }
+}
+#degreeNumber, #xPos, #yPos, #degreeCNumber, #xPosC, #yPosC{
+    display: inline;
+}
